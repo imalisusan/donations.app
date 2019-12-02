@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" onMouseClicked="#handleButtonAction" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.LoginController">
+    <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="400.0" fitWidth="562.0">
+               <image>
+                  <Image url="@start.png" />
+               </image>
+            </ImageView>
+            <Text layoutX="14.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Be Change" wrappingWidth="372.13671875">
+               <font>
+                  <Font name="Webdings" size="36.0" />
+               </font>
+            </Text>
+            <Text layoutX="14.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Giving a chance to people who want to be part of change in the lives of many people around the world" wrappingWidth="330.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Button id="signUp" layoutX="35.0" layoutY="274.0" mnemonicParsing="false" onAction="#goToSignUp" prefHeight="30.0" prefWidth="218.0" style="-fx-background-color: A20707;" stylesheets="@sample.css" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="435.0" prefHeight="400.0" prefWidth="345.0" style="-fx-background-color: F3F3F3;">
+         <children>
+            <PasswordField id="passCode" fx:id="passCode" layoutX="45.0" layoutY="200.0" prefHeight="25.0" prefWidth="230.0" style="-fx-border-color: A20707;" stylesheets="@sample.css">
+               <font>
+                  <Font size="14.0" />
+               </font></PasswordField>
+            <TextField id="userName" fx:id="userName" layoutX="39.0" layoutY="102.0" prefHeight="25.0" prefWidth="230.0" stylesheets="@sample.css" AnchorPane.bottomAnchor="273.0">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <Button id="logIn" fx:id="btnSignIn" layoutX="45.0" layoutY="287.0" mnemonicParsing="false" onAction="#handleButtonAction" onMouseClicked="#handleButtonAction" prefHeight="30.0" prefWidth="218.0" style="-fx-background-color: A20707;" stylesheets="@sample.css" text="Log  In" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+              <Label fx:id="label" layoutX="29.0" layoutY="60.0" minHeight="16" minWidth="69" prefHeight="36.0" prefWidth="218.0" text="Username">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="35.0" layoutY="170.0" prefHeight="30.0" prefWidth="238.0" text="Password">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblErrors" layoutX="45.0" layoutY="248.0" prefHeight="30.0" prefWidth="230.0" textFill="#a20707" />
+            <Button layoutX="307.0" layoutY="2.0" mnemonicParsing="false" onAction="#exit" style="-fx-background-color: F3F3F3;" text="X" textFill="#a20707">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+    </children>
+</AnchorPane>
